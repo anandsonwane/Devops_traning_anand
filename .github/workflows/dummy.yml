@@ -24,4 +24,5 @@ jobs:
         run: echo "Dummy workflow ran successfully!"
 
       - name: Show branch information
-        run: echo "Triggered ref: $GITHUB_REF"
+        run: |
+          echo "Triggered ref: $GITHUB_REF"
