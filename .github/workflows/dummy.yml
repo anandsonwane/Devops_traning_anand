@@ -1,0 +1,27 @@
+
+name: Dummy Workflow
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - main
+      - testbranch
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dummy-check:
+    name: Dummy check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print success message
+        run: echo "Dummy workflow ran successfully!"
+
+      - name: Show branch information
+        run: echo "Triggered ref: $GITHUB_REF"
