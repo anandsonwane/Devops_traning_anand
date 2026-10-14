@@ -25,3 +25,13 @@ Task 4 5 6
     git add Readme.md
     git commit -m "Test dummy workflow"
     git push -u origin feature/dummy-test
+
+
+    Simple & easy Steps 
+    git switch main
+git pull --ff-only origin main
+git switch -c feature/your-task
+git status
+git add .
+git commit -m "Describe your changes"
+git push -u origin feature/your-task
